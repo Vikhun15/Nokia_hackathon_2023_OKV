@@ -1,0 +1,18 @@
+1.	Snake
+A kígyós videójátékok a kezdetektől nagy népszerűségnek örvendenek, az első változatot még 1976-ban hozták létre. A feladatod, hogy egy hasonló játékot hozz létre, amiben egy kis pitont kell irányítanod. Hogy a pitonod életszerűen viselkedjen, a legideálisabb, ha a Python programozási nyelvet használod :-).
+Az alábbi szabályokat vedd figyelembe a játék elkészítésekor:
+•	a játék egy 60 x 30-as pályán játszódik, ez az a tér, ahol a piton mozoghat,
+•	a pitonod egy “@” karakterrel keltsd életre, amit a játék indulásakor egy véletlenszerű ponton helyezz el a pályán,
+•	a pálya szélét (a játéktéren kívül) kerítés védi, amit a “*” karakterrel jeleníts meg,
+•	amikor a játék elindul, rajzold ki a pályát minden elemmel együtt, és jelenítsd meg a “Hova?” feliratot, amivel a pitonunk kérdezi a játékostól, hogy mit csináljon,
+•	a pitonnal magyarul kell tudnunk beszélgetni, de csak az alábbi szavakat kell megtanulnia és megértenie:
+o	balra
+o	jobbra
+o	fel
+o	le
+o	meguntam
+•	a “meguntam” szóra jelezzük, hogy elegünk lett a játékból és ideje pihenni menni (befejezhetjük a program futását),
+•	a többi szóra értelemszerűen a megfelelő mozgást kell végrehajtatni a pitonunkkal,
+•	egyéb utasítást nem kell értelmezni,
+•	ha a piton hozzáér a kerítéshez, hagyjuk vele abba a játékot (befejezhetjük a program futását),
+•	mielőtt a játékod kilép, illedelmesen köszönjünk el a kis pitontól a “Most ennyi volt, szép napot!” felirattal.
