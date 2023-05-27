@@ -1,0 +1,21 @@
+2.	Dobble generátor
+A Dobble nevű társasjáték egy kártyapakliból áll, melyben minden kártyán n darab különböző ábra található. Bármely két kártyát választva a pakliból igaz az az állítás, hogy a két kártyán egy és csakis egy azonos ábra látható. Egy olyan pakli esetén például, ahol n=3, két kártya lehet mondjuk a következő: (ágy, asztal, TV) - (fagyi, zokni, asztal). Itt az asztal a közös, a többi mind különböző.
+A feladat egy olyan program készítése, mely egy paraméterül kapott n számhoz tartozó szabályos Dobble paklit generál. A grafikus ábrákat most természetes számok fogják helyettesíteni. A program kimenete soronként egy kártya tartalma kell legyen, a kártya "ábráit", azaz a számokat szóközökkel kell elválasztani.
+Például n=3 paraméterrel indítva, egy lehetséges szabályos kimenet a következő:
+•	> ./dobble.py 3
+•	1 2 3
+•	1 4 5
+•	1 6 42
+•	2 4 6
+•	2 5 42
+•	3 4 42
+•	3 5 6
+Fontos még megjegyezni, hogy nem lehet minden kártya-pár közös eleme ugyanaz az érték, így a következő megoldás érvénytelen (itt a közös érték mindig az 1):
+•	1 2 3
+•	1 4 5
+•	1 6 7
+•	1 8 9
+•	1 10 11
+•	1 12 13
+•	...
+A cél a minél nagyobb kártyaszámú pakli generálása.
