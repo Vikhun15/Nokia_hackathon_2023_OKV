@@ -15,7 +15,7 @@ def GenerateCards(n):
             # És így tovább...
             kartyak[i].append((j + 1) + (i * kartya_szam) + 1)
 
-    # TODO: leírni mi mit csinál
+    # Hozzáadunk kartya_szam x kartya_szam-nyi kártyát
     for i in range(kartya_szam):
         for j in range(kartya_szam):
             kartyak.append([i + 2])
