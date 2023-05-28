@@ -1,0 +1,10 @@
+salami : 1700,
+pepperoni : 2300,
+eggplant : 2100,
+coke : 450,
+pepsi : 480,
+water : 350,
+fanta : 430,
+large : 1.2,
+medium : 1,
+small : 0.8
