@@ -1,0 +1,2 @@
+A programjaimat a Windows 10-es operációs rendszeren készítettem el, a Pycharm fejlesztői környezet felhasználásával és a python 3.11-es verziójának igénybevételével.
+
