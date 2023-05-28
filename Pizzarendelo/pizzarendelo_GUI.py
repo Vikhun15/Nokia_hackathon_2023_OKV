@@ -1,7 +1,6 @@
 import tkinter as tk
 import threading
 import time
-import multiprocessing
 from pizzarendelo_assistant import PizzaType, PizzaSize, Final, WaitForInput
 from pizzarendelo_file import TransformData, ExportData
 

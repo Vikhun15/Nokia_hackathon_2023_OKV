@@ -78,4 +78,64 @@ A "dobble.py" tartalmazza a felhasználó adatbekérést, a "dobble_generator.py
 
 # Pizzarendelés
 
+## Felhasználói dokumentáció
 
+A program elindításakor a felhasználó elé kerül rögtön a kommunikációs felület, ahol a "chatbot" már rögtön fel is dobja az első üzenetet, amire várja a felhasználó válaszát. 
+
+![Ábra 3.1, Pizza starting GUI](Kepek/Pizza/3_1_Start_GUI.PNG)
+
+Itt a felhasználónak lehetősége van bezárni az ablakot a jobb felső sarokban található "X" gombra kattintva, illetve üzenetet írni az oldal alján, balra található szövegdobozba írva, majd azt elküldeni az "Enter" billentyű vagy a "send" gomb megnyomásával.
+
+![Ábra 3.2, Pizza First Chat](Kepek/Pizza/3_2_First_Chat_1.PNG)
+
+Ha a felhasználó egy lehetséges pizza típust (/típusokat) írt be, akkor azok helyességéről visszakérdez az aszisztens. 
+
+Erre a "y"-el vagy "yes"-el válaszolva a felhasználó jóvá tudja hagyni a típust.
+
+Ezt követően az asszisztens érdeklődik a pizza méret iránt. Itt tudja a felhasználó megadni az extrákat is, mint a pepsi, coke, water és fanta. Utána megintcsak visszajelzést kér az asszisztens a rendelés helyességéről, melyre "y"-el, vagy "yes"-el válaszolva a felhasználó le tudja adni a rendelését. 
+
+
+![Ábra 3.3, Pizza Second Chat](Kepek/Pizza/3_3_Second_Chat_1.PNG)
+
+A rendelés leadását követően a rendszer összesíti a rendelést egy "order.txt" nevű állományban, ami már tartalmazza az árat is. Innentől a rendelést a felhasználó az "order" kulcsszó beírásával tudja újraindítani.
+
+![Ábra 3.4, Pizza Final Chat](Kepek/Pizza/3_4_Final_Chat_1.PNG)
+
+
+
+![Ábra 3.5, Pizza orders.txt](Kepek/Pizza/3_5_orders.PNG)
+
+
+A Pizzák és az egyéb termékek árai egy "prices.txt" nevű fájlban vannak elmentve.
+
+
+![Ábra 3.6, Pizza prices.txt](Kepek/Pizza/3_6_prices.PNG)
+
+## Fejlesztői dokumentáció
+
+A program 4 különböző fájlra van szét bontva és 2 darab txt fájllal kommunikál.
+
+A "pizzarendelo_file.py" szolgál a fájlokkal való kommunikációra, továbbá itt történik a rendelés adatainak az átalakítása.
+
+A "pizzarendelo_assistant.py" tartalmazza az aszisztenshez tartozó kódot, amihez az adatot a GUI-ból olvassa ki.
+
+A "pizzarendelo_GUI.py"-ben találhatóak a Grafikus Felhasználó Felület, azaz GUI, felépítséhez szükséges függvények, illetve itt fut a kettő szál is.
+
+A "pizzarendelo_main.py" csak a program elindítására szolgál.
+
+## Felhasznált könyvárak
+
+### Tkinter
+
+A programhoz tartozó GUI megírásához használatba vettem a Tkinter könyvtárat. Azért választottam ezt, mert ezzel már korábban volt egy kevés tapasztalatom, illetve ehhez sikerült a legtöbb támogatást találnom.
+
+### Threading
+
+Az aszisztens GUI-val való párhuzamos futtatásához a python Threading könyvtárát használtam. Ezt a könyvtárat ugyancsak azért választottam mert már korábban volt benne tapasztalatom, illetve sok segítséget találtam hozzá az internetes fórumokon. 
+Csak is egyetlenegy függvény fut a Threading-en keresztül indított szálon, az pedig a "pizzarendelo_GUI.py" "Run" függvénye, ami az asztisztenst futtatja.
+
+
+
+---
+
+Ezen kívül felhasználtam a time könyvtárat, ezzel adva egy kevés időt az asszistens válaszaihoz, hogy természetesebbnek érződjön a válasza.
