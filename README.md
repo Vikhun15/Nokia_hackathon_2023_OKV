@@ -15,19 +15,23 @@
 
  A program elindításakor a felhasználó előtt megjelenik a feladatleírásban megadott 60 (+ 2 a határral) egység magas és 30 (+ 2 a határral) egység széles pálya.
  Illetve a felhasználót megkérdezi a program, hogy merre szeretne tovább lépni.
+
  ![Ábra 1.1, Snake start](Kepek/Snake/1_1_start.PNG)
 
 
  Ezt követően a felhasználó a "balra", "jobbra", "fel" és "le" parancsokkal tud haladni, melyeket kedv szerint ki is egészítheti egy számmal, mely esetben a program annyiszor hajtja végre a lépést.
+
  ![Ábra 1.2, Snake bemenet_1](Kepek/Snake/1_2_Bemenet_1.PNG)
 
  Illetve a "meguntam" parancs beírásával a felhasználó ki is tud lépni a játékból.
+
  ![Ábra 1.3, Snake bemenet_2](Kepek/Snake/1_3_Bemenet_2.PNG)
 
  Fontos megemlíteni, hogy a bemenetnél nem számít a kis- és nagybetű. A program mind a kettő formájában végrehajtja az utasítást.
 
 
  A navigációval a felhasználó el tudja érni a "$" szimbólummal jelölt cseresznyéket, melyek érintésével a kígyó mérete megnő egyel.
+
  ![Ábra 1.4, Snake Cseresznye](Kepek/Snake/1_4_cseresznye.PNG)
 
 
@@ -36,7 +40,7 @@ Ezt követően a játék egészen addig megy, amíg a felhasználó vagy nekimeg
 
 ## Fejlesztői dokumentáció
 
-![Ábra 1.5, Snake Usecase](Kepek/Snake/1_5_use_case.PNG)
+![Ábra 1.5, Snake Usecase](Kepek/Snake/1_5_use_case.png)
 
 A program megírásánál figyelembe vettem a feladatleírásban megadott követelményeket.
 
