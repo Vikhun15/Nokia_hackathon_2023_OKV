@@ -1,2 +1,18 @@
 A programjaimat a Windows 10-es operációs rendszeren készítettem el, a Pycharm fejlesztői környezet felhasználásával és a python 3.11-es verziójának igénybevételével.
 
+Felhasznált könyvtár(ak):
+
+Snake:
+	enum - Az enumerációs osztályból való örökléshez (Python beépített)
+	random - A kígyó és a "cherry" random elhelyezéséhez (Python beépített)
+
+Dobble:
+	sys - A parancssori paraméterekhez (Python beépített)
+
+Pizzarendelő:
+	Tkinter - A GUI felépítéséhez (pip telepített)
+	threading - A több szálon való futás megvalósításához (Python beépített)
+	time - A várakoztatáshoz (Python beépített)
+
+
+
